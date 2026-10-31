@@ -5,8 +5,8 @@
 
 [build.environment]
   OUT_DIR = "dist"
-  # "1" = versão de pré-visualização (faixa amarela + não aparece no Google).
-  # Quando o stand aprovar o site, mudar para "0".
+  # "1" = o site ainda não aparece no Google (noindex).
+  # Quando o stand aprovar e o domínio estiver ligado, mudar para "0".
   PREVIEW = "1"
 
 [[headers]]

@@ -104,7 +104,7 @@ def layout(page, title, desc, body, root="", path="", extra_ld=None, og_img=SITE
     ld = [DEALER] + ([extra_ld] if extra_ld else [])
     nav = lambda p, href, label: f'<a href="{root}{href}" data-p="{p}">{label}</a>'
     robots = '<meta name="robots" content="noindex,nofollow">' if PREVIEW else '<meta name="robots" content="index,follow">'
-    banner = '<div class="preview">Proposta de redesign — pré-visualização, não é o site oficial da Moto S. Cristóvão.</div>' if PREVIEW else ""
+    banner = ""
     return f"""<!DOCTYPE html>
 <html lang="pt-PT">
 <head>
