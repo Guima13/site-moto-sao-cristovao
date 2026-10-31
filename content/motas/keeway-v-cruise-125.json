@@ -1,0 +1,20 @@
+{
+  "marca": "Keeway",
+  "modelo": "V-Cruise 125",
+  "segmento": "Custom e clássicas",
+  "cilindrada": 125,
+  "carta": "A1",
+  "potencia_cv": 13.8,
+  "peso": 169,
+  "deposito": 15,
+  "altura_banco": 690,
+  "disponibilidade": "Por encomenda",
+  "preco": 4690,
+  "descricao": "Custom de 125 cc com banco baixo e postura descontraída.",
+  "fotos": [
+    "/assets/fotos/keeway-v-cruise-125.webp"
+  ],
+  "link_oficial": "https://www.keeway.com/pt-pt/products/v-cruise-125",
+  "destaque": false,
+  "publicado": true
+}

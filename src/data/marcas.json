@@ -1,0 +1,38 @@
+{
+  "segmentos": [
+    "Trail / Aventura",
+    "Desportivas",
+    "Naked",
+    "Custom e clássicas",
+    "Maxi-scooters",
+    "Scooters",
+    "Moto 4 / UTV"
+  ],
+  "marcas": {
+    "Benelli": {
+      "cor": "#1c6b3a",
+      "desc": "Marca italiana com motas naked, trail e clássicas, das 125 cc às 800 cc.",
+      "logo": "assets/marcas/benelli.svg"
+    },
+    "Keeway": {
+      "cor": "#c2410c",
+      "desc": "Motas e scooters de 125 cc com ótima relação qualidade-preço, ideais para a primeira mota ou para quem conduz com carta B.",
+      "logo": "assets/marcas/keeway.svg"
+    },
+    "Kymco": {
+      "cor": "#c8102e",
+      "desc": "Scooters e maxi-scooters fiáveis e económicas, para a cidade, para o dia a dia e para viajar.",
+      "logo": "assets/marcas/kymco.png"
+    },
+    "Linhai": {
+      "cor": "#1d4fa3",
+      "desc": "Moto 4 (ATV) e veículos utilitários todo-o-terreno para trabalho e lazer."
+    }
+  },
+  "texto_marcas": {
+    "Benelli": "Trail, naked e desportivas",
+    "Keeway": "Motas 125 cc, custom e trail",
+    "Kymco": "Scooters e maxi-scooters",
+    "Linhai": "Moto 4 / ATV"
+  }
+}

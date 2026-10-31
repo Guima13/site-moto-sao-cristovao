@@ -1,0 +1,21 @@
+{
+  "marca": "Benelli",
+  "modelo": "TRK 502 X",
+  "segmento": "Trail / Aventura",
+  "cilindrada": 500,
+  "carta": "A2",
+  "potencia_kw": 35,
+  "potencia_cv": 47.6,
+  "peso": 235,
+  "deposito": 20,
+  "altura_banco": 860,
+  "disponibilidade": "Por encomenda",
+  "preco": 6490,
+  "descricao": "Aventura escreve-se com X: trail de 500 cc para carta A2.",
+  "fotos": [
+    "/assets/fotos/benelli-trk-502-x.webp"
+  ],
+  "link_oficial": "https://www.benelli.com/pt-pt/products/trk-502x-2",
+  "destaque": true,
+  "publicado": true
+}

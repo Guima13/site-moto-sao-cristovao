@@ -1,0 +1,11 @@
+{
+  "modelo": "Harley-Davidson",
+  "tipo": "Custom",
+  "ano": 2011,
+  "descricao": "",
+  "fotos": [
+    "/assets/fotos/usada-5.jpg"
+  ],
+  "vendida": false,
+  "publicado": true
+}

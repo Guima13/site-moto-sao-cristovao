@@ -1,0 +1,10 @@
+{
+  "modelo": "Suzuki DR 400",
+  "tipo": "Trail",
+  "descricao": "",
+  "fotos": [
+    "/assets/fotos/usada-2.jpg"
+  ],
+  "vendida": false,
+  "publicado": true
+}

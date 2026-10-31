@@ -1,0 +1,19 @@
+{
+  "marca": "Keeway",
+  "modelo": "Vieste 125",
+  "segmento": "Scooters",
+  "cilindrada": 125,
+  "carta": "A1",
+  "potencia_cv": 9.7,
+  "peso": 134,
+  "altura_banco": 770,
+  "disponibilidade": "Por encomenda",
+  "preco": 2790,
+  "descricao": "Scooter de 125 cc com estilo desportivo, prática para o dia a dia na cidade.",
+  "fotos": [
+    "/assets/fotos/keeway-vieste-125.webp"
+  ],
+  "link_oficial": "https://www.keeway.com/pt-pt/products/vieste-125",
+  "destaque": false,
+  "publicado": true
+}

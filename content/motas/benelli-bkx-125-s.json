@@ -1,0 +1,21 @@
+{
+  "marca": "Benelli",
+  "modelo": "BKX 125 S",
+  "segmento": "Naked",
+  "cilindrada": 125,
+  "carta": "A1",
+  "potencia_kw": 11,
+  "potencia_cv": 15,
+  "peso": 133,
+  "deposito": 12,
+  "altura_banco": 820,
+  "disponibilidade": "Por encomenda",
+  "preco": 3490,
+  "descricao": "Versão de estrada da BKX 125, ágil e divertida na cidade.",
+  "fotos": [
+    "/assets/fotos/benelli-bkx-125-s.webp"
+  ],
+  "link_oficial": "https://www.benelli.com/pt-pt/products/bkx-125-s",
+  "destaque": false,
+  "publicado": true
+}

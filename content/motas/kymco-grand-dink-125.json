@@ -1,0 +1,21 @@
+{
+  "marca": "Kymco",
+  "modelo": "Grand Dink 125 ABS",
+  "segmento": "Maxi-scooters",
+  "cilindrada": 125,
+  "carta": "A1",
+  "potencia_kw": 9.5,
+  "potencia_cv": 12.9,
+  "peso": 183,
+  "deposito": 13,
+  "disponibilidade": "Por encomenda",
+  "preco": 3899,
+  "transporte_legalizacao": 445,
+  "descricao": "Scooter de 125 cc confortável e espaçosa, com ABS.",
+  "fotos": [
+    "/assets/fotos/kymco-grand-dink-125.jpg"
+  ],
+  "link_oficial": "https://www.kymco.pt/models/scooters-125/grand-dink-125-abs",
+  "destaque": false,
+  "publicado": true
+}

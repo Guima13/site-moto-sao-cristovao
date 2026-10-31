@@ -1,0 +1,10 @@
+{
+  "modelo": "Kawasaki KX 450F",
+  "tipo": "Motocross",
+  "descricao": "",
+  "fotos": [
+    "/assets/fotos/usada-3.jpg"
+  ],
+  "vendida": false,
+  "publicado": true
+}

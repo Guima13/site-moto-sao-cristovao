@@ -1,0 +1,29 @@
+# Configuração do Netlify — publica o site automaticamente a cada alteração.
+[build]
+  command = "python3 build.py"
+  publish = "dist"
+
+[build.environment]
+  OUT_DIR = "dist"
+  # "1" = versão de pré-visualização (faixa amarela + não aparece no Google).
+  # Quando o stand aprovar o site, mudar para "0".
+  PREVIEW = "1"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    Cache-Control = "no-store"

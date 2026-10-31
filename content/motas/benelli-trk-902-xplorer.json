@@ -1,0 +1,21 @@
+{
+  "marca": "Benelli",
+  "modelo": "TRK 902 Xplorer",
+  "segmento": "Trail / Aventura",
+  "cilindrada": 904,
+  "carta": "A",
+  "potencia_kw": 68.5,
+  "potencia_cv": 93.2,
+  "peso": 240,
+  "deposito": 21,
+  "altura_banco": 840,
+  "disponibilidade": "Por encomenda",
+  "preco": 8990,
+  "descricao": "Trail de grande cilindrada com componentes Brembo e Marzocchi.",
+  "fotos": [
+    "/assets/fotos/benelli-trk-902-xplorer.webp"
+  ],
+  "link_oficial": "https://www.benelli.com/pt-pt/products/trk-902-xplorer",
+  "destaque": true,
+  "publicado": true
+}

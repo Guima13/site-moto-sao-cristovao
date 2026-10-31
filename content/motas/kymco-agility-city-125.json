@@ -1,0 +1,21 @@
+{
+  "marca": "Kymco",
+  "modelo": "Nova Agility City 125 Evolution",
+  "segmento": "Scooters",
+  "cilindrada": 125,
+  "carta": "A1",
+  "potencia_kw": 6.6,
+  "potencia_cv": 9.0,
+  "peso": 131,
+  "deposito": 7,
+  "disponibilidade": "Por encomenda",
+  "preco": 2299,
+  "transporte_legalizacao": 415,
+  "descricao": "Scooter de rodas altas, económica e simples — a escolha clássica para a cidade.",
+  "fotos": [
+    "/assets/fotos/kymco-agility-city-125.jpg"
+  ],
+  "link_oficial": "https://www.kymco.pt/models/scooters-125/nova-agility-city-125-evolution",
+  "destaque": false,
+  "publicado": true
+}

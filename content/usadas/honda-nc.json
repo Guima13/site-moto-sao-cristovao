@@ -1,0 +1,10 @@
+{
+  "modelo": "Honda NC",
+  "tipo": "Crossover",
+  "descricao": "",
+  "fotos": [
+    "/assets/fotos/usada-6.jpg"
+  ],
+  "vendida": false,
+  "publicado": true
+}

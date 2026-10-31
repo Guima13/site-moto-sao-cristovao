@@ -1,0 +1,21 @@
+{
+  "marca": "Kymco",
+  "modelo": "Xciting S 400i ABS",
+  "segmento": "Maxi-scooters",
+  "cilindrada": 400,
+  "carta": "A2",
+  "potencia_kw": 26.5,
+  "potencia_cv": 36.0,
+  "peso": 209,
+  "deposito": 12.5,
+  "disponibilidade": "Por encomenda",
+  "preco": 6899,
+  "transporte_legalizacao": 515,
+  "descricao": "Maxi-scooter desportiva de 400 cc pensada para viajar.",
+  "fotos": [
+    "/assets/fotos/kymco-xciting-s-400.jpg"
+  ],
+  "link_oficial": "https://www.kymco.pt/models/sport/xciting-s-400i-abs",
+  "destaque": false,
+  "publicado": true
+}

@@ -1,0 +1,21 @@
+{
+  "marca": "Kymco",
+  "modelo": "Visar 125i",
+  "segmento": "Naked",
+  "cilindrada": 125,
+  "carta": "A1",
+  "potencia_kw": 7.5,
+  "potencia_cv": 10.2,
+  "peso": 136,
+  "deposito": 13.5,
+  "disponibilidade": "Por encomenda",
+  "preco": 2899,
+  "transporte_legalizacao": 445,
+  "descricao": "Mota de 125 cc da Kymco, prática e económica.",
+  "fotos": [
+    "/assets/fotos/kymco-visar-125.jpg"
+  ],
+  "link_oficial": "https://www.kymco.pt/models/motociclos/visar-125i",
+  "destaque": false,
+  "publicado": true
+}

@@ -1,0 +1,21 @@
+{
+  "marca": "Kymco",
+  "modelo": "Agility 50",
+  "segmento": "Scooters",
+  "cilindrada": 50,
+  "carta": "AM",
+  "potencia_kw": 2.2,
+  "potencia_cv": 3.0,
+  "peso": 97,
+  "deposito": 5,
+  "disponibilidade": "Por encomenda",
+  "preco": 1699,
+  "transporte_legalizacao": 225,
+  "descricao": "Scooter de 50 cc simples e económica, ideal para começar.",
+  "fotos": [
+    "/assets/fotos/kymco-agility-50.jpg"
+  ],
+  "link_oficial": "https://www.kymco.pt/models/scooters-50/agility-50",
+  "destaque": false,
+  "publicado": true
+}

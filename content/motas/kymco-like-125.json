@@ -1,0 +1,21 @@
+{
+  "marca": "Kymco",
+  "modelo": "Nova Like 125",
+  "segmento": "Scooters",
+  "cilindrada": 125,
+  "carta": "A1",
+  "potencia_kw": 8.5,
+  "potencia_cv": 11.6,
+  "peso": 128,
+  "deposito": 6.5,
+  "disponibilidade": "Por encomenda",
+  "preco": 2599,
+  "transporte_legalizacao": 415,
+  "descricao": "Scooter de estilo retro com linhas clássicas.",
+  "fotos": [
+    "/assets/fotos/kymco-like-125.jpg"
+  ],
+  "link_oficial": "https://www.kymco.pt/models/scooters-125/nova-like-125",
+  "destaque": false,
+  "publicado": true
+}

@@ -1,0 +1,21 @@
+{
+  "marca": "Kymco",
+  "modelo": "Super Dink 350 ABS",
+  "segmento": "Maxi-scooters",
+  "cilindrada": 321,
+  "carta": "A2",
+  "potencia_kw": 21.2,
+  "potencia_cv": 28.8,
+  "peso": 192,
+  "deposito": 12.5,
+  "disponibilidade": "Por encomenda",
+  "preco": 5199,
+  "transporte_legalizacao": 465,
+  "descricao": "Maxi-scooter de 350 cc confortável, compatível com carta A2.",
+  "fotos": [
+    "/assets/fotos/kymco-super-dink-350.jpg"
+  ],
+  "link_oficial": "https://www.kymco.pt/models/scooters-mais-125/super-dink-350-abs",
+  "destaque": false,
+  "publicado": true
+}

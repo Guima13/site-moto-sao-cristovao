@@ -1,0 +1,16 @@
+{
+  "marca": "Linhai",
+  "modelo": "M 210 EFI 2x4",
+  "segmento": "Moto 4 / UTV",
+  "cilindrada": 177,
+  "carta": "Consultar",
+  "disponibilidade": "Por encomenda",
+  "preco": 2870,
+  "descricao": "Moto 4 prática e fácil de conduzir, para pequenos trabalhos e lazer. Motor de 177 cc com injeção eletrónica.",
+  "fotos": [
+    "/assets/fotos/linhai-m210-efi.jpg"
+  ],
+  "link_oficial": "https://multimoto.pt/en/?p=5650",
+  "destaque": false,
+  "publicado": true
+}

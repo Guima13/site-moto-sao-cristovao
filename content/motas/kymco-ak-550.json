@@ -1,0 +1,21 @@
+{
+  "marca": "Kymco",
+  "modelo": "AK 550",
+  "segmento": "Maxi-scooters",
+  "cilindrada": 550,
+  "carta": "A",
+  "potencia_kw": 39.5,
+  "potencia_cv": 53.7,
+  "peso": 230,
+  "deposito": 15,
+  "disponibilidade": "Por encomenda",
+  "preco": 10249,
+  "transporte_legalizacao": 585,
+  "descricao": "O topo de gama das maxi-scooters Kymco, com motor bicilíndrico.",
+  "fotos": [
+    "/assets/fotos/kymco-ak-550.jpg"
+  ],
+  "link_oficial": "https://www.kymco.pt/models/sport/ak-550",
+  "destaque": false,
+  "publicado": true
+}
