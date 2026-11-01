@@ -20,9 +20,9 @@
 .fw-item img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#ddd}\
 .fw-tag{position:absolute;top:6px;left:6px;background:#d71f26;color:#fff;font-size:12px;font-weight:700;padding:3px 8px;border-radius:20px}\
 .fw-bar{display:flex}\
-.fw-bar button{flex:1;min-height:44px;border:0;border-top:1px solid #e2e4e6;background:#fff;font-size:18px;cursor:pointer}\
+.fw-bar button{flex:1;min-height:44px;display:flex;align-items:center;justify-content:center;border:0;border-top:1px solid #e2e4e6;background:#fff;color:#2b2f34;cursor:pointer}\
 .fw-bar button+button{border-left:1px solid #e2e4e6}\
-.fw-bar button:disabled{color:#ccc;cursor:default}\
+.fw-bar button:disabled{color:#d0d3d6;cursor:default}\
 .fw-bar .del{color:#a21b1b}\
 .fw-empty{padding:22px;text-align:center;color:#6b6f74;border:2px dashed #cfd3d7;border-radius:10px;font-size:15px}\
 .fw-hint{color:#6b6f74;font-size:13px;margin-top:10px}\
@@ -33,6 +33,18 @@
 .fw-grid{grid-template-columns:repeat(2,1fr);gap:8px}\
 }";
   var st = document.createElement("style"); st.textContent = CSS; document.head.appendChild(st);
+
+  var ICONS = {
+    cam: ["M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z", "M12 17a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"],
+    img: ["M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z", "M3 16l5-5 4 4 3-3 6 6", "M15.5 9.5a1.5 1.5 0 1 0 0-.01"],
+    left: ["M15 5l-7 7 7 7"], right: ["M9 5l7 7-7 7"],
+    star: ["M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"],
+    del: ["M5 7h14", "M10 7V4h4v3", "M7 7l1 13h8l1-13"]
+  };
+  function icon(n) {
+    return h("svg", { viewBox: "0 0 24 24", width: 22, height: 22, fill: "none", stroke: "currentColor", strokeWidth: 2, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": "true" },
+      ICONS[n].map(function (d, i) { return h("path", { key: i, d: d }); }));
+  }
 
   function slug(s) {
     return String(s || "foto").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
@@ -121,22 +133,22 @@
           h("img", { src: src, alt: "Foto " + (i + 1), loading: "lazy" }),
           i === 0 ? h("span", { className: "fw-tag" }, "Principal") : null,
           h("div", { className: "fw-bar" },
-            h("button", { type: "button", title: "Mover para a esquerda", "aria-label": "Mover para a esquerda", disabled: i === 0, onClick: function () { self.move(i, -1); } }, "◀"),
-            i === 0 ? null : h("button", { type: "button", title: "Tornar principal", "aria-label": "Tornar principal", onClick: function () { self.principal(i); } }, "★"),
-            h("button", { type: "button", title: "Mover para a direita", "aria-label": "Mover para a direita", disabled: i === fotos.length - 1, onClick: function () { self.move(i, 1); } }, "▶"),
-            h("button", { type: "button", className: "del", title: "Retirar foto", "aria-label": "Retirar foto", onClick: function () { self.remove(i); } }, "✕")
+            h("button", { type: "button", title: "Mover para a esquerda", "aria-label": "Mover para a esquerda", disabled: i === 0, onClick: function () { self.move(i, -1); } }, icon("left")),
+            i === 0 ? null : h("button", { type: "button", title: "Tornar principal", "aria-label": "Tornar principal", onClick: function () { self.principal(i); } }, icon("star")),
+            h("button", { type: "button", title: "Mover para a direita", "aria-label": "Mover para a direita", disabled: i === fotos.length - 1, onClick: function () { self.move(i, 1); } }, icon("right")),
+            h("button", { type: "button", className: "del", title: "Retirar foto", "aria-label": "Retirar foto", onClick: function () { self.remove(i); } }, icon("del"))
           ));
       })) : h("div", { className: "fw-empty" }, "Ainda não há fotos. Use os botões acima para adicionar.");
 
       return h("div", { className: "fw" },
         cam, gal,
         h("div", { className: "fw-btns" },
-          h("button", { type: "button", className: "fw-btn", disabled: busy, onClick: function () { self.camEl && self.camEl.click(); } }, "📷 Tirar foto"),
-          h("button", { type: "button", className: "fw-btn sec", disabled: busy, onClick: function () { self.galEl && self.galEl.click(); } }, "🖼️ Escolher fotos")
+          h("button", { type: "button", className: "fw-btn", disabled: busy, onClick: function () { self.camEl && self.camEl.click(); } }, icon("cam"), "Tirar foto"),
+          h("button", { type: "button", className: "fw-btn sec", disabled: busy, onClick: function () { self.galEl && self.galEl.click(); } }, icon("img"), "Escolher fotos")
         ),
         this.state.msg ? h("p", { className: "fw-msg" + (this.state.err ? " err" : ""), role: "status" }, this.state.msg) : null,
         grid,
-        h("p", { className: "fw-hint" }, "A foto marcada como «Principal» aparece primeiro no site. Use ★ para escolher outra, ◀ ▶ para mudar a ordem e ✕ para retirar.")
+        h("p", { className: "fw-hint" }, "A foto marcada como «Principal» aparece primeiro no site. Use a estrela para escolher outra, as setas para mudar a ordem e o caixote para retirar.")
       );
     }
   });
