@@ -5,7 +5,7 @@ Entrar em **www.motosaocristovao.pt/admin** com o seu email e palavra-passe.
 ## Adicionar uma mota usada
 1. *Motas usadas* → botão **+ mota usada** (em cima à direita).
 2. Preencher marca e modelo, ano, quilómetros e preço (vazio = «Preço sob consulta»).
-3. **Fotos** → *Adicionar foto* → *Escolha uma imagem* → *Enviar novo* → escolher a foto (no telemóvel pode tirar a foto na hora) → *Escolher selecionado*. Repetir para cada foto. A primeira é a principal; arraste pelas riscas (═) para mudar a ordem.
+3. **Fotos** → **📷 Tirar foto** (tira na hora com o telemóvel) ou **🖼️ Escolher fotos** (pode selecionar várias de uma vez). Aparecem logo em miniatura: **★** passa a principal, **◀ ▶** muda a ordem, **✕** retira. Funciona igual no telemóvel e no computador.
 4. **Publicar → Publicar agora.** Em cerca de 1 minuto aparece no site.
 
 ## Quando uma usada for vendida

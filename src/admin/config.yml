@@ -43,11 +43,7 @@ collections:
       - { label: "Marca e modelo", name: modelo, widget: string, hint: "Ex.: Honda NC750X" }
       - label: "Fotos"
         name: fotos
-        widget: list
-        label_singular: "foto"
-        collapsed: false
-        hint: "Clique em «Adicionar foto» para cada foto (pode tirar a foto na hora com o telemóvel). Arraste pelas riscas (═) para mudar a ordem — a primeira é a principal."
-        field: { label: "Foto", name: foto, widget: image, choose_url: false }
+        widget: fotos
       - { label: "Preço (€)", name: preco, widget: number, value_type: int, required: false, hint: "Só números, ex.: 4990. Deixe vazio para mostrar «Preço sob consulta»." }
       - { label: "Ano", name: ano, widget: number, value_type: int, required: false }
       - { label: "Quilómetros", name: quilometros, widget: number, value_type: int, required: false, hint: "Só números, ex.: 12500" }
@@ -88,11 +84,7 @@ collections:
         options: ["Trail / Aventura", "Desportivas", "Naked", "Custom e clássicas", "Maxi-scooters", "Scooters", "Moto 4 / UTV"]
       - label: "Fotos"
         name: fotos
-        widget: list
-        label_singular: "foto"
-        collapsed: false
-        hint: "Clique em «Adicionar foto» para cada foto. Arraste pelas riscas (═) para mudar a ordem — a primeira é a principal."
-        field: { label: "Foto", name: foto, widget: image, choose_url: false }
+        widget: fotos
       - { label: "Preço (€)", name: preco, widget: number, value_type: int, required: false, hint: "Só números, ex.: 6490. Deixe vazio para mostrar «Preço sob consulta»." }
       - { label: "Transporte e legalização (€)", name: transporte_legalizacao, widget: number, value_type: int, required: false }
       - label: "Disponibilidade"
