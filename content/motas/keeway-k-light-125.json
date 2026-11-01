@@ -2,19 +2,21 @@
   "marca": "Keeway",
   "modelo": "K-Light 125",
   "segmento": "Custom e clássicas",
-  "cilindrada": 124,
-  "carta": "A1",
-  "potencia_cv": 10.6,
-  "peso": 151,
-  "deposito": 11.8,
-  "altura_banco": 715,
-  "disponibilidade": "Por encomenda",
-  "preco": 2880,
-  "descricao": "Custom compacta e acessível, fácil de conduzir na cidade.",
   "fotos": [
     "/assets/fotos/keeway-k-light-125.webp"
   ],
-  "link_oficial": "https://www.keeway.com/pt-pt/products/k-light-125",
+  "preco": 2880,
+  "disponibilidade": "Por encomenda",
   "destaque": false,
+  "descricao": "Custom compacta e acessível, fácil de conduzir na cidade.",
+  "ficha_tecnica": {
+    "cilindrada": 124,
+    "carta": "A1",
+    "potencia_cv": 10.6,
+    "peso": 151,
+    "deposito": 11.8,
+    "altura_banco": 715,
+    "link_oficial": "https://www.keeway.com/pt-pt/products/k-light-125"
+  },
   "publicado": true
 }

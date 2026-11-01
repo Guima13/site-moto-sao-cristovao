@@ -2,16 +2,17 @@
   "marca": "Benelli",
   "modelo": "Leoncino 500",
   "segmento": "Naked",
-  "cilindrada": 500,
-  "carta": "A2",
-  "potencia_kw": 35,
-  "potencia_cv": 47.6,
-  "disponibilidade": "Por encomenda",
-  "descricao": "Scrambler bicilíndrica de 500 cc, compatível com carta A2.",
   "fotos": [
     "/assets/fotos/benelli-leoncino-500.jpg"
   ],
-  "link_oficial": "",
+  "disponibilidade": "Por encomenda",
   "destaque": false,
+  "descricao": "Scrambler bicilíndrica de 500 cc, compatível com carta A2.",
+  "ficha_tecnica": {
+    "cilindrada": 500,
+    "carta": "A2",
+    "potencia_kw": 35,
+    "potencia_cv": 47.6
+  },
   "publicado": true
 }

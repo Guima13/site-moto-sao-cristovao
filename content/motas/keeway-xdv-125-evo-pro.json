@@ -2,19 +2,21 @@
   "marca": "Keeway",
   "modelo": "XDV 125 EVO PRO",
   "segmento": "Maxi-scooters",
-  "cilindrada": 125,
-  "carta": "A1",
-  "potencia_cv": 12.5,
-  "peso": 145,
-  "deposito": 10,
-  "altura_banco": 810,
-  "disponibilidade": "Por encomenda",
-  "preco": 3490,
-  "descricao": "Scooter de 125 cc com estilo aventura, para quem quer um visual trail com carta A1 ou B.",
   "fotos": [
     "/assets/fotos/keeway-xdv-125-evo-pro.webp"
   ],
-  "link_oficial": "https://www.keeway.com/pt-pt/products/xdv-125-evo-pro",
+  "preco": 3490,
+  "disponibilidade": "Por encomenda",
   "destaque": false,
+  "descricao": "Scooter de 125 cc com estilo aventura, para quem quer um visual trail com carta A1 ou B.",
+  "ficha_tecnica": {
+    "cilindrada": 125,
+    "carta": "A1",
+    "potencia_cv": 12.5,
+    "peso": 145,
+    "deposito": 10,
+    "altura_banco": 810,
+    "link_oficial": "https://www.keeway.com/pt-pt/products/xdv-125-evo-pro"
+  },
   "publicado": true
 }

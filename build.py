@@ -69,6 +69,7 @@ def foto(path):
     _cache[rel] = res; return res
 
 def prep_mota(m):
+    m = {**m, **(m.get("ficha_tecnica") or {})}
     fotos = [f for f in (foto(p) for p in m.get("fotos", [])) if f]
     return {"id": m["id"], "b": m["marca"], "m": m["modelo"], "seg": m.get("segmento", ""), "cc": m.get("cilindrada"),
             "carta": None if m.get("carta") in (None, "", "Consultar") else m["carta"], "kw": m.get("potencia_kw"), "cv": m.get("potencia_cv"),

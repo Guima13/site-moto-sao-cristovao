@@ -2,20 +2,22 @@
   "marca": "Benelli",
   "modelo": "Tornado 550",
   "segmento": "Desportivas",
-  "cilindrada": 554,
-  "carta": "A",
-  "potencia_kw": 41.2,
-  "potencia_cv": 56,
-  "peso": 198,
-  "deposito": 16.5,
-  "altura_banco": 785,
-  "disponibilidade": "Por encomenda",
-  "preco": 6590,
-  "descricao": "Desportiva bicilíndrica de 554 cc. Dominate the storm.",
   "fotos": [
     "/assets/fotos/benelli-tornado-550.webp"
   ],
-  "link_oficial": "https://www.benelli.com/pt-pt/products/tornado-550",
+  "preco": 6590,
+  "disponibilidade": "Por encomenda",
   "destaque": true,
+  "descricao": "Desportiva bicilíndrica de 554 cc. Dominate the storm.",
+  "ficha_tecnica": {
+    "cilindrada": 554,
+    "carta": "A",
+    "potencia_kw": 41.2,
+    "potencia_cv": 56,
+    "peso": 198,
+    "deposito": 16.5,
+    "altura_banco": 785,
+    "link_oficial": "https://www.benelli.com/pt-pt/products/tornado-550"
+  },
   "publicado": true
 }

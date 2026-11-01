@@ -2,20 +2,22 @@
   "marca": "Kymco",
   "modelo": "Grand Dink 300 ABS",
   "segmento": "Maxi-scooters",
-  "cilindrada": 276,
-  "carta": "A2",
-  "potencia_kw": 18,
-  "potencia_cv": 24.5,
-  "peso": 200,
-  "deposito": 13,
-  "disponibilidade": "Por encomenda",
-  "preco": 4499,
-  "transporte_legalizacao": 465,
-  "descricao": "Maxi-scooter de 300 cc para cidade e estrada.",
   "fotos": [
     "/assets/fotos/kymco-grand-dink-300.jpg"
   ],
-  "link_oficial": "https://www.kymco.pt/models/scooters-mais-125/grand-dink-300-abs",
+  "preco": 4499,
+  "transporte_legalizacao": 465,
+  "disponibilidade": "Por encomenda",
   "destaque": false,
+  "descricao": "Maxi-scooter de 300 cc para cidade e estrada.",
+  "ficha_tecnica": {
+    "cilindrada": 276,
+    "carta": "A2",
+    "potencia_kw": 18,
+    "potencia_cv": 24.5,
+    "peso": 200,
+    "deposito": 13,
+    "link_oficial": "https://www.kymco.pt/models/scooters-mais-125/grand-dink-300-abs"
+  },
   "publicado": true
 }

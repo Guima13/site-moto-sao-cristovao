@@ -2,19 +2,21 @@
   "marca": "Keeway",
   "modelo": "RKS 125",
   "segmento": "Desportivas",
-  "cilindrada": 124,
-  "carta": "A1",
-  "potencia_cv": 10.8,
-  "peso": 133,
-  "deposito": 15.5,
-  "altura_banco": 795,
-  "disponibilidade": "Por encomenda",
-  "preco": 2290,
-  "descricao": "Visual desportivo e posição de condução dinâmica num formato 125 cc acessível.",
   "fotos": [
     "/assets/fotos/keeway-rks-125.webp"
   ],
-  "link_oficial": "https://www.keeway.com/pt-pt/products/rks-125",
+  "preco": 2290,
+  "disponibilidade": "Por encomenda",
   "destaque": false,
+  "descricao": "Visual desportivo e posição de condução dinâmica num formato 125 cc acessível.",
+  "ficha_tecnica": {
+    "cilindrada": 124,
+    "carta": "A1",
+    "potencia_cv": 10.8,
+    "peso": 133,
+    "deposito": 15.5,
+    "altura_banco": 795,
+    "link_oficial": "https://www.keeway.com/pt-pt/products/rks-125"
+  },
   "publicado": true
 }

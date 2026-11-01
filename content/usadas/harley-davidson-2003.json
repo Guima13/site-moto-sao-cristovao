@@ -1,11 +1,11 @@
 {
   "modelo": "Harley-Davidson",
-  "tipo": "Custom",
-  "ano": 2003,
-  "descricao": "",
   "fotos": [
     "/assets/fotos/usada-4.jpg"
   ],
+  "ano": 2003,
+  "tipo": "Custom",
+  "descricao": "",
   "vendida": false,
   "publicado": true
 }

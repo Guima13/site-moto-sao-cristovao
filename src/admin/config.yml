@@ -12,19 +12,55 @@ backend:
     deleteMedia: "Apagar foto {{path}}"
 
 locale: pt
-site_url: https://www.motosaocristovao.pt
-display_url: https://www.motosaocristovao.pt
+logo_url: /admin/logo.svg
+site_url: https://motoscristovaooficial.netlify.app
+display_url: https://motoscristovaooficial.netlify.app
 
 # As fotos carregadas no painel ficam aqui (o site otimiza-as automaticamente ao publicar)
 media_folder: src/assets/fotos/uploads
 public_folder: /assets/fotos/uploads
 
 collections:
+  # ---------------- MOTAS USADAS ----------------
+  - name: usadas
+    label: "Motas usadas"
+    label_singular: "mota usada"
+    description: "Para adicionar uma usada: botão «+ mota usada» (em cima à direita) → preencher → «Publicar» → «Publicar agora». Quando for vendida, abra-a e ligue «Vendida»."
+    folder: content/usadas
+    extension: json
+    format: json
+    create: true
+    delete: true
+    slug: "{{modelo}}-{{ano}}"
+    identifier_field: modelo
+    summary: "{{modelo}} {{ano}}"
+    sortable_fields: ["modelo", "ano", "preco"]
+    view_filters:
+      - { label: "À venda", field: vendida, pattern: false }
+      - { label: "Vendidas", field: vendida, pattern: true }
+    editor: { preview: false }
+    fields:
+      - { label: "Marca e modelo", name: modelo, widget: string, hint: "Ex.: Honda NC750X" }
+      - label: "Fotos"
+        name: fotos
+        widget: list
+        label_singular: "foto"
+        collapsed: false
+        hint: "Clique em «Adicionar foto» para cada foto (pode tirar a foto na hora com o telemóvel). Arraste pelas riscas (═) para mudar a ordem — a primeira é a principal."
+        field: { label: "Foto", name: foto, widget: image, choose_url: false }
+      - { label: "Preço (€)", name: preco, widget: number, value_type: int, required: false, hint: "Só números, ex.: 4990. Deixe vazio para mostrar «Preço sob consulta»." }
+      - { label: "Ano", name: ano, widget: number, value_type: int, required: false }
+      - { label: "Quilómetros", name: quilometros, widget: number, value_type: int, required: false, hint: "Só números, ex.: 12500" }
+      - { label: "Tipo", name: tipo, widget: select, options: [Scooter, Naked, Trail, Touring, Custom, Desportiva, Motocross, Crossover, "Moto 4"], required: false }
+      - { label: "Descrição", name: descricao, widget: text, required: false, hint: "Ex.: revisão feita, pneus novos, um só dono, extras incluídos…" }
+      - { label: "Vendida", name: vendida, widget: boolean, default: false, hint: "Ligue quando for vendida — deixa de aparecer no site mas fica guardada aqui." }
+      - { label: "Mostrar no site", name: publicado, widget: boolean, default: true, hint: "Desligue para esconder temporariamente." }
+
   # ---------------- MOTAS NOVAS ----------------
   - name: motas
-    label: Motas novas
-    label_singular: Mota nova
-    description: "Motas novas à venda ou por encomenda. A primeira foto é a foto principal."
+    label: "Motas novas"
+    label_singular: "mota nova"
+    description: "Gama de motas novas. Para mudar preço, fotos ou se está em stand: abra o modelo, altere e «Publicar» → «Publicar agora»."
     folder: content/motas
     extension: json
     format: json
@@ -33,98 +69,84 @@ collections:
     slug: "{{marca}}-{{modelo}}"
     identifier_field: modelo
     summary: "{{marca}} {{modelo}} · {{disponibilidade}}"
-    sortable_fields: ["marca", "modelo", "segmento"]
+    sortable_fields: ["marca", "modelo", "segmento", "preco"]
+    view_filters:
+      - { label: "Em stand", field: disponibilidade, pattern: "Em stand" }
+      - { label: "Por encomenda", field: disponibilidade, pattern: "Por encomenda" }
+      - { label: "Em destaque", field: destaque, pattern: true }
+      - { label: "Escondidas", field: publicado, pattern: false }
     view_groups:
-      - { label: Marca, field: marca }
-      - { label: Disponibilidade, field: disponibilidade }
+      - { label: "Marca", field: marca }
+      - { label: "Segmento", field: segmento }
     editor: { preview: false }
     fields:
-      - { label: Publicado no site, name: publicado, widget: boolean, default: true, hint: "Desligue para esconder a mota sem a apagar." }
-      - { label: Marca, name: marca, widget: select, options: [Benelli, Keeway, Kymco, Linhai] }
-      - { label: Modelo, name: modelo, widget: string, hint: "Ex.: TRK 502 X" }
-      - label: Segmento
+      - { label: "Marca", name: marca, widget: select, options: [Benelli, Keeway, Kymco, Linhai] }
+      - { label: "Modelo", name: modelo, widget: string, hint: "Ex.: TRK 502 X" }
+      - label: "Segmento"
         name: segmento
         widget: select
         options: ["Trail / Aventura", "Desportivas", "Naked", "Custom e clássicas", "Maxi-scooters", "Scooters", "Moto 4 / UTV"]
-      - label: Disponibilidade
+      - label: "Fotos"
+        name: fotos
+        widget: list
+        label_singular: "foto"
+        collapsed: false
+        hint: "Clique em «Adicionar foto» para cada foto. Arraste pelas riscas (═) para mudar a ordem — a primeira é a principal."
+        field: { label: "Foto", name: foto, widget: image, choose_url: false }
+      - { label: "Preço (€)", name: preco, widget: number, value_type: int, required: false, hint: "Só números, ex.: 6490. Deixe vazio para mostrar «Preço sob consulta»." }
+      - { label: "Transporte e legalização (€)", name: transporte_legalizacao, widget: number, value_type: int, required: false }
+      - label: "Disponibilidade"
         name: disponibilidade
         widget: select
         options: ["Em stand", "Por encomenda"]
         default: "Por encomenda"
-      - { label: Destaque na página inicial, name: destaque, widget: boolean, default: false, hint: "Aparecem as 4 primeiras marcadas." }
-      - label: Fotos
-        name: fotos
-        widget: list
-        hint: "Carregue as fotos tiradas no stand (pode ser diretamente do telemóvel). Arraste para mudar a ordem — a primeira é a principal."
-        field: { label: Foto, name: foto, widget: image, choose_url: false }
-      - { label: Descrição curta, name: descricao, widget: text, required: false }
-      - { label: Preço (€), name: preco, widget: number, value_type: int, required: false, hint: "Deixe vazio para mostrar «Preço sob consulta»." }
-      - { label: Transporte e legalização (€), name: transporte_legalizacao, widget: number, value_type: int, required: false }
-      - { label: Cilindrada (cc), name: cilindrada, widget: number, value_type: int, required: false }
-      - label: Carta de condução
-        name: carta
-        widget: select
-        options:
-          - { label: "AM / B (50 cc)", value: AM }
-          - { label: "A1 / B (até 125 cc)", value: A1 }
-          - { label: "A2", value: A2 }
-          - { label: "A", value: A }
-          - { label: "Consultar", value: Consultar }
-        default: A1
-      - { label: Potência (kW), name: potencia_kw, widget: number, value_type: float, required: false }
-      - { label: Potência (cv), name: potencia_cv, widget: number, value_type: float, required: false }
-      - { label: Peso (kg), name: peso, widget: number, value_type: int, required: false }
-      - { label: Depósito (L), name: deposito, widget: number, value_type: float, required: false }
-      - { label: Altura do banco (mm), name: altura_banco, widget: number, value_type: int, required: false }
-      - { label: Link para o site oficial da marca, name: link_oficial, widget: string, required: false }
-
-  # ---------------- MOTAS USADAS ----------------
-  - name: usadas
-    label: Motas usadas
-    label_singular: Mota usada
-    description: "Usadas à venda. Marque «Vendida» para a retirar do site sem a apagar."
-    folder: content/usadas
-    extension: json
-    format: json
-    create: true
-    delete: true
-    slug: "{{modelo}}-{{ano}}"
-    identifier_field: modelo
-    summary: "{{modelo}} ({{ano}})"
-    editor: { preview: false }
-    fields:
-      - { label: Publicado no site, name: publicado, widget: boolean, default: true }
-      - { label: Vendida, name: vendida, widget: boolean, default: false, hint: "Ao marcar, deixa de aparecer no site." }
-      - { label: Marca e modelo, name: modelo, widget: string, hint: "Ex.: Honda NC750X" }
-      - { label: Tipo, name: tipo, widget: select, options: [Scooter, Naked, Trail, Touring, Custom, Desportiva, Motocross, Crossover, "Moto 4"], required: false }
-      - { label: Ano, name: ano, widget: number, value_type: int, required: false }
-      - { label: Quilómetros, name: quilometros, widget: number, value_type: int, required: false }
-      - { label: Preço (€), name: preco, widget: number, value_type: int, required: false, hint: "Deixe vazio para mostrar «Preço sob consulta»." }
-      - label: Fotos
-        name: fotos
-        widget: list
-        hint: "Clique em «Adicionar fotos» uma vez por cada foto. Arraste para mudar a ordem — a primeira é a principal."
-        field: { label: Foto, name: foto, widget: image, choose_url: false }
-      - { label: Descrição, name: descricao, widget: text, required: false, hint: "Ex.: revisão feita, pneus novos, um só dono…" }
+      - { label: "Destaque na página inicial", name: destaque, widget: boolean, default: false, hint: "Aparecem na página inicial as 4 primeiras marcadas." }
+      - { label: "Descrição curta", name: descricao, widget: text, required: false }
+      - label: "Ficha técnica"
+        name: ficha_tecnica
+        widget: object
+        collapsed: true
+        summary: "{{fields.cilindrada}} cc · carta {{fields.carta}}"
+        hint: "Clique para abrir. Campos vazios não aparecem no site."
+        fields:
+          - { label: "Cilindrada (cc)", name: cilindrada, widget: number, value_type: int, required: false }
+          - label: "Carta de condução"
+            name: carta
+            widget: select
+            options:
+              - { label: "AM / B (50 cc)", value: AM }
+              - { label: "A1 / B (até 125 cc)", value: A1 }
+              - { label: "A2", value: A2 }
+              - { label: "A", value: A }
+              - { label: "Consultar", value: Consultar }
+            default: A1
+          - { label: "Potência (kW)", name: potencia_kw, widget: number, value_type: float, required: false }
+          - { label: "Potência (cv)", name: potencia_cv, widget: number, value_type: float, required: false }
+          - { label: "Peso (kg)", name: peso, widget: number, value_type: int, required: false }
+          - { label: "Depósito (L)", name: deposito, widget: number, value_type: float, required: false }
+          - { label: "Altura do banco (mm)", name: altura_banco, widget: number, value_type: int, required: false }
+          - { label: "Link para o site oficial da marca", name: link_oficial, widget: string, required: false }
+      - { label: "Mostrar no site", name: publicado, widget: boolean, default: true, hint: "Desligue para esconder o modelo sem o apagar." }
 
   # ---------------- INFORMAÇÕES DO STAND ----------------
   - name: definicoes
-    label: Informações do stand
+    label: "Contactos e horário"
+    description: "Telefone, email, horário, WhatsApp e redes sociais que aparecem no site."
     editor: { preview: false }
     files:
       - name: site
-        label: Contactos, horário e redes sociais
+        label: "Contactos, horário e redes sociais"
         file: content/site.json
         fields:
-          - { label: Telefone, name: telefone, widget: string }
-          - { label: Email, name: email, widget: string }
-          - { label: Morada, name: morada, widget: string }
-          - { label: Código postal e localidade, name: codigo_postal, widget: string }
-          - { label: Horário (versão curta, topo do site), name: horario_curto, widget: string }
-          - label: Horário (linhas da página de contactos)
+          - { label: "Telefone", name: telefone, widget: string }
+          - { label: "Email", name: email, widget: string }
+          - { label: "Morada", name: morada, widget: string }
+          - { label: "Código postal e localidade", name: codigo_postal, widget: string }
+          - { label: "Horário (versão curta, aparece no topo do site)", name: horario_curto, widget: string }
+          - label: "Horário (linhas da página de contactos)"
             name: horario
             widget: list
-            field: { label: Linha, name: linha, widget: string }
-          - { label: WhatsApp (telemóvel), name: whatsapp, widget: string, required: false, hint: "Só números, ex.: 912345678. Vazio = sem botão de WhatsApp." }
-          - { label: Facebook (link), name: facebook, widget: string, required: false }
-          - { label: Instagram (link), name: instagram, widget: string, required: false }
+            field: { label: "Linha", name: linha, widget: string }
+          - { label: "WhatsApp (telemóvel)", name: whatsapp, widget: string, required: false, hint: "Só números, ex.: 912345678. Vazio = sem botão de WhatsApp." }
+          - { label: "Facebook (link completo)", name: facebook, widget: string, required: false }
+          - { label: "Instagram (link completo)", name: instagram, widget: string, required: false }

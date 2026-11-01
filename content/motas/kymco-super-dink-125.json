@@ -2,20 +2,22 @@
   "marca": "Kymco",
   "modelo": "Super Dink 125i ABS",
   "segmento": "Maxi-scooters",
-  "cilindrada": 124,
-  "carta": "A1",
-  "potencia_kw": 10,
-  "potencia_cv": 13.6,
-  "peso": 176,
-  "deposito": 12.5,
-  "disponibilidade": "Por encomenda",
-  "preco": 4399,
-  "transporte_legalizacao": 445,
-  "descricao": "Maxi-scooter de 125 cc com proteção e conforto para o dia a dia.",
   "fotos": [
     "/assets/fotos/kymco-super-dink-125.jpg"
   ],
-  "link_oficial": "https://www.kymco.pt/models/scooters-125/super-dink-125i-abs",
+  "preco": 4399,
+  "transporte_legalizacao": 445,
+  "disponibilidade": "Por encomenda",
   "destaque": false,
+  "descricao": "Maxi-scooter de 125 cc com proteção e conforto para o dia a dia.",
+  "ficha_tecnica": {
+    "cilindrada": 124,
+    "carta": "A1",
+    "potencia_kw": 10,
+    "potencia_cv": 13.6,
+    "peso": 176,
+    "deposito": 12.5,
+    "link_oficial": "https://www.kymco.pt/models/scooters-125/super-dink-125i-abs"
+  },
   "publicado": true
 }

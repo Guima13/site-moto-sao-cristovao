@@ -2,20 +2,22 @@
   "marca": "Kymco",
   "modelo": "Agility RS 50",
   "segmento": "Scooters",
-  "cilindrada": 50,
-  "carta": "AM",
-  "potencia_kw": 2.2,
-  "potencia_cv": 3.0,
-  "peso": 104,
-  "deposito": 5,
-  "disponibilidade": "Por encomenda",
-  "preco": 1799,
-  "transporte_legalizacao": 225,
-  "descricao": "Versão de estilo desportivo da Agility 50.",
   "fotos": [
     "/assets/fotos/kymco-agility-rs-50.jpg"
   ],
-  "link_oficial": "https://www.kymco.pt/models/scooters-50/agility-rs-50",
+  "preco": 1799,
+  "transporte_legalizacao": 225,
+  "disponibilidade": "Por encomenda",
   "destaque": false,
+  "descricao": "Versão de estilo desportivo da Agility 50.",
+  "ficha_tecnica": {
+    "cilindrada": 50,
+    "carta": "AM",
+    "potencia_kw": 2.2,
+    "potencia_cv": 3.0,
+    "peso": 104,
+    "deposito": 5,
+    "link_oficial": "https://www.kymco.pt/models/scooters-50/agility-rs-50"
+  },
   "publicado": true
 }

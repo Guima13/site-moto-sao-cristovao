@@ -2,19 +2,21 @@
   "marca": "Benelli",
   "modelo": "BKX 125",
   "segmento": "Trail / Aventura",
-  "cilindrada": 125,
-  "carta": "A1",
-  "potencia_kw": 11,
-  "potencia_cv": 15,
-  "deposito": 12,
-  "altura_banco": 860,
-  "disponibilidade": "Por encomenda",
-  "preco": 3690,
-  "descricao": "A aventura começa aqui: uma 125 de estilo todo-o-terreno.",
   "fotos": [
     "/assets/fotos/benelli-bkx-125.webp"
   ],
-  "link_oficial": "https://www.benelli.com/pt-pt/products/bkx-125",
+  "preco": 3690,
+  "disponibilidade": "Por encomenda",
   "destaque": true,
+  "descricao": "A aventura começa aqui: uma 125 de estilo todo-o-terreno.",
+  "ficha_tecnica": {
+    "cilindrada": 125,
+    "carta": "A1",
+    "potencia_kw": 11,
+    "potencia_cv": 15,
+    "deposito": 12,
+    "altura_banco": 860,
+    "link_oficial": "https://www.benelli.com/pt-pt/products/bkx-125"
+  },
   "publicado": true
 }

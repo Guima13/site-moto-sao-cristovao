@@ -1,19 +1,21 @@
 {
-  "carta": "A2",
-  "destaque": false,
-  "publicado": true,
-  "cilindrada": 500,
+  "marca": "Benelli",
   "modelo": "Leoncino 500 Trail",
-  "descricao": "A versão todo-o-terreno da Leoncino 500: pneus mistos, jantes de raios de 19\" à frente e o mesmo motor bicilíndrico de 500 cc, compatível com carta A2.",
-  "disponibilidade": "Por encomenda",
-  "potencia_kw": 35,
+  "segmento": "Trail / Aventura",
   "fotos": [
     "/assets/fotos/benelli-leoncino-500-trail.webp"
   ],
-  "peso": 207,
-  "potencia_cv": 47.6,
-  "altura_banco": 835,
-  "marca": "Benelli",
-  "segmento": "Trail / Aventura",
-  "link_oficial": "https://www.benelli.com/ao-pt/products/leoncino-500-trail-2"
+  "disponibilidade": "Por encomenda",
+  "destaque": false,
+  "descricao": "A versão todo-o-terreno da Leoncino 500: pneus mistos, jantes de raios de 19\" à frente e o mesmo motor bicilíndrico de 500 cc, compatível com carta A2.",
+  "ficha_tecnica": {
+    "cilindrada": 500,
+    "carta": "A2",
+    "potencia_kw": 35,
+    "potencia_cv": 47.6,
+    "peso": 207,
+    "altura_banco": 835,
+    "link_oficial": "https://www.benelli.com/ao-pt/products/leoncino-500-trail-2"
+  },
+  "publicado": true
 }

@@ -1,10 +1,10 @@
 {
   "modelo": "BMW K1600 GTL",
-  "tipo": "Touring",
-  "descricao": "",
   "fotos": [
     "/assets/fotos/usada-1.jpg"
   ],
+  "tipo": "Touring",
+  "descricao": "",
   "vendida": false,
   "publicado": true
 }
